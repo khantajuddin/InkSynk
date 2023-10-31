@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Philips Digital Services Automations</title>
+    <link href="https://db.onlinewebfonts.com/c/0aee6008b82cde991ec28387169bb13e?family=GD+Sherpa+Regular" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img 
+            src="https://www.philips.com.tr/c-etc/philips/clientlibs/foundation-general/clientlibs-css-rb2014/images/generic/philips-footer-logo.svg" 
+            alt="Philips Digital Services Automations
+            ">
+        </a>
+        <h1 class="site-title">Philips Digital Services Automations</h1>
+        <select onChange="updateLanguage(this)" id="langugeSelector">
+            <option value="uk english" selected>UK English</option>
+            <option value="german">German</option>
+            <option value="french">French</option>
+            <option value="dutch">Dutch</option>
+            <option value="usa english">USA English</option>
+            <option value="italian">Italian</option>
+            <option value="japanese">Japanese</option>
+            <option value="chinese">Chinese</option>
+            <option value="polish">Polish</option>
+            <option value="turkish">Turkish</option>
+            <option value="arabic">Arabic</option>
+            <option value="portuguese">Portuguese</option>
+            <option value="spanish">Spanish</option>
+        </select>
+    </header>
+    <main>
+        <h2>Add text to images</h2>
+        <div class="action-items">
+            <div class="action-items-left">
+                <label>Upload Excel File or Upload Image(s)</label>
+                <input type="file" id="upload" accept=".xlsx, image/*" multiple />
+            </div>
+            <div class="action-items-right">
+                <button id="download">Download as JPEG</button>
+                <button id="download-all">Download All as ZIP</button>
+            </div>
+        </div>
+    </main>
+        <div id="canvas-container"></div>
+        
+    <footer>
+
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
